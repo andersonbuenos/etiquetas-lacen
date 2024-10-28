@@ -1,0 +1,99 @@
+.etiqueta-container {
+    width: 5.5cm;
+    height: 3cm;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paciente {
+    margin-right: 135px !important;
+}
+
+.idamostra {
+    margin-right: 120px !important;
+    font-size: 0.9rem;
+}
+
+.etiqueta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+    margin-top: -4px;
+}
+
+.etiqueta-info p {
+    margin-right: 75px;
+    font-size: 0.8rem;
+}
+
+.etiqueta-barcode {
+    margin-left: auto;
+    height: 1.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.print-controls {
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+}
+
+#print-controls label {
+    margin-right: 10px;
+}
+
+#print-controls input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.etiqueta {
+    page-break-inside: avoid;
+    page-break-after: always;
+    width: 5.5cm;
+    height: 3cm;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimaImpressao {
+    width: 371px;
+}
+
+.ultimaSerie {
+    width: 371px;
+}
+
+.totalEtiquetas {
+    width: 371px;
+}
+
+svg[id^="barcode-"] {
+    width: 5cm;
+    height: 2cm;
+    margin: 10px 0;
+}
+
+@media screen {
+    .etiqueta {
+        display: none;
+    }
+}
+
+@media print {
+    .print-controls {
+        display: none;
+    }
+
+    .etiqueta-barcode {
+        margin: 10px 0;
+    }
+}
